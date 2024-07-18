@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1164,2714</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1164,2763.3333333333335</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -118,36 +118,36 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1174,2649" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1174,2698.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="1112,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
-    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="1112,88" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
-    <Sequence sap:VirtualizedContainerService.HintSize="1112,2228" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="1112,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
+    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="1112,88.66666666666667" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
+    <Sequence DisplayName="Sequence : Entering the Cashin , oncheck and notoncheck" sap:VirtualizedContainerService.HintSize="1112,2266.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: UIDemo" sap:VirtualizedContainerService.HintSize="1050,2117" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="1ae8b8d1-a0f2-4162-a787-06330126ab80" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: UIDemo" sap:VirtualizedContainerService.HintSize="1050,2156" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="1ae8b8d1-a0f2-4162-a787-06330126ab80" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,1803" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence DisplayName="Do : Fill the details" sap:VirtualizedContainerService.HintSize="1016,1836" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NCheckState DisplayName="Check App State 'UIDemo'" sap:VirtualizedContainerService.HintSize="954,1713" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="3" Version="V3">
+              <uix:NCheckState DisplayName="Check App State 'UIDemo'" sap:VirtualizedContainerService.HintSize="954,1745.3333333333333" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="3" Version="V3">
                 <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,1471" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence DisplayName="Target appears : If the window appears " sap:VirtualizedContainerService.HintSize="450,1498.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="TransactionNumber" />
                     </Sequence.Variables>
@@ -156,7 +156,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Cash In'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1ae8b8d1-a0f2-4162-a787-06330126ab80" Text="[in_TransactionItem(&quot;CashIn&quot;).ToString]" Version="V3">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Cash In'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1ae8b8d1-a0f2-4162-a787-06330126ab80" Text="[in_TransactionItem(&quot;CashIn&quot;).ToString]" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable CVScreenId="b1784965-f574-43b0-beaf-1561f2f8992b" CvElementArea="332, 168, 123, 26" CvType="InputBox" DesignTimeRectangle="333, 169, 120, 23" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl automationid='cashintb' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='cashintb' role='editable text' /&gt;" Guid="f860e4bc-c62a-4952-84a7-8bb766cba2c6" InformativeScreenshot="ddcb394cf650d3eb97c1bdc69d10a8a7.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -173,7 +173,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'On Us Check'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="1ae8b8d1-a0f2-4162-a787-06330126ab80" Text="[in_TransactionItem(&quot;OnUsCheck&quot;).ToString]" Version="V3">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'On Us Check'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="1ae8b8d1-a0f2-4162-a787-06330126ab80" Text="[in_TransactionItem(&quot;OnUsCheck&quot;).ToString]" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable CVScreenId="7dfb082f-e034-4325-95a4-48be22eb114a" CvElementArea="332, 207, 123, 26" CvType="InputBox" DesignTimeRectangle="333, 208, 120, 23" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl automationid='onustb' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='onustb' role='editable text' /&gt;" Guid="aecb53c2-0d4b-4c95-93ca-89898bbb5e4d" InformativeScreenshot="c6148fe5ac70060f85c7b8d703062ddf.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -190,7 +190,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Not On Us Check'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="1ae8b8d1-a0f2-4162-a787-06330126ab80" Text="[in_TransactionItem(&quot;NotOnUsCheck&quot;).ToString]" Version="V3">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Not On Us Check'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="1ae8b8d1-a0f2-4162-a787-06330126ab80" Text="[in_TransactionItem(&quot;NotOnUsCheck&quot;).ToString]" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable CVScreenId="d0858044-b102-4df0-a988-a073edaa9a32" CvElementArea="332, 246, 123, 26" CvType="InputBox" DesignTimeRectangle="333, 247, 120, 23" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl automationid='notonustb' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='notonustb' role='editable text' /&gt;" Guid="8e177244-d3e3-4ecf-8476-fd59d9ee671b" InformativeScreenshot="e18f17eeaa9826bd37a5b8c0bd5f90a5.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -207,7 +207,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NTypeInto>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Accept'" sap:VirtualizedContainerService.HintSize="388,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ae8b8d1-a0f2-4162-a787-06330126ab80" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Accept'" sap:VirtualizedContainerService.HintSize="388,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ae8b8d1-a0f2-4162-a787-06330126ab80" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable CVScreenId="e0a4f86a-abaf-4172-a026-206f1b626d92" CvElementArea="440, 545, 82, 33" CvTextArea="461, 555, 39, 14" CvTextArgument="Accept" CvType="Button" DesignTimeRectangle="463, 555, 36, 13" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Accept' role='push button' /&gt;&lt;ctrl name='Accept' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Accept' role='push button' /&gt;&lt;ctrl name='Accept' role='text' automationid='' check:text='Accept' /&gt;" Guid="20b2b3ce-4e7f-4af1-9e55-5e5e1c8ba6b3" InformativeScreenshot="bfa8fe4867a8a7a3a284e638004ef19b.png" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -228,7 +228,7 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NGetText DisplayName="Get Text 'Transaction #'" sap:VirtualizedContainerService.HintSize="388,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="1ae8b8d1-a0f2-4162-a787-06330126ab80" TextString="[TransactionNumber]" Version="V3">
+                    <uix:NGetText DisplayName="Get Text 'Transaction #'" sap:VirtualizedContainerService.HintSize="388,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="1ae8b8d1-a0f2-4162-a787-06330126ab80" TextString="[TransactionNumber]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable CVScreenId="a7aef7e8-e4c3-46ab-981e-544ff773ac7e" CvTextArea="519, 127, 48, 13" CvType="AnyWordGroup" DesignTimeRectangle="521, 126, 47, 16" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='transnrlabel' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='transnrlabel' role='text' /&gt;" Guid="2b0b87a5-bbff-4d0b-afb4-ade8107b20ba" ImageBase64="" InformativeScreenshot="76834ea5f42d2e0e52ed1608a6507bfd.png" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -239,18 +239,18 @@
                         </uix:TargetAnchorable>
                       </uix:NGetText.Target>
                     </uix:NGetText>
-                    <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="TransactionNumber" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="388,217" sap2010:WorkflowViewState.IdRef="UpdateRowItem_2" Row="[in_TransactionItem]" Value="[TransactionNumber.ToString]" />
+                    <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="TransactionNumber" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="388,223.33333333333334" sap2010:WorkflowViewState.IdRef="UpdateRowItem_2" Row="[in_TransactionItem]" Value="[TransactionNumber.ToString]" />
                   </Sequence>
                 </uix:NCheckState.IfExists>
                 <uix:NCheckState.IfNotExists>
-                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,380" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Target does not appear : If the window does not appears " sap:VirtualizedContainerService.HintSize="450,387.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Login unsuccessful&quot;]" />
-                    <Throw Exception="[new SystemException]" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                    <ui:LogMessage DisplayName="Log Message : Login unsuccessful" sap:VirtualizedContainerService.HintSize="388,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Login unsuccessful&quot;]" />
+                    <Throw DisplayName="Throw : Business exception" Exception="[new SystemException]" sap:VirtualizedContainerService.HintSize="388,117.33333333333333" sap2010:WorkflowViewState.IdRef="Throw_1" />
                   </Sequence>
                 </uix:NCheckState.IfNotExists>
                 <uix:NCheckState.Target>
